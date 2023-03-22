@@ -7,28 +7,10 @@
   <!-- that they should prefer consuming it instead. -->
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.scimall</groupId>
+  <groupId>com.scimall.scimalla</groupId>
   <artifactId>imsdk</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <packaging>aar</packaging>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.simpligility.maven.plugins</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>4.1.0</version>
-        <extensions>true</extensions>
-        <configuration>
-          <encoding>utf8</encoding>
-          <source>1.8</source>
-          <target>1.8</target>
-          <sign>
-            <debug>false</debug>
-          </sign>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
   <dependencies>
     <dependency>
       <groupId>androidx.multidex</groupId>
@@ -39,49 +21,67 @@
     <dependency>
       <groupId>com.netease.yunxin.kit.contact</groupId>
       <artifactId>contactkit-ui</artifactId>
-      <version>9.3.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.netease.yunxin.kit.qchat</groupId>
-      <artifactId>qchatkit-ui</artifactId>
-      <version>9.3.0</version>
+      <version>9.4.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.netease.yunxin.kit.conversation</groupId>
       <artifactId>conversationkit-ui</artifactId>
-      <version>9.3.1</version>
+      <version>9.4.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.netease.yunxin.kit.team</groupId>
       <artifactId>teamkit-ui</artifactId>
-      <version>9.3.0</version>
+      <version>9.4.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.netease.yunxin.kit.chat</groupId>
       <artifactId>chatkit-ui</artifactId>
-      <version>9.3.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.netease.yunxin.kit.search</groupId>
-      <artifactId>searchkit-ui</artifactId>
-      <version>9.3.0</version>
+      <version>9.4.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.netease.yunxin.kit.locationkit</groupId>
       <artifactId>locationkit</artifactId>
-      <version>9.3.0</version>
+      <version>9.4.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.netease.yunxin.kit.common</groupId>
       <artifactId>common-ui</artifactId>
       <version>1.1.13</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.netease.nimlib</groupId>
+      <artifactId>basesdk</artifactId>
+      <version>6.5.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.netease.nimlib</groupId>
+      <artifactId>avsignalling</artifactId>
+      <version>6.5.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.netease.yunxin.kit.call</groupId>
+      <artifactId>call-ui</artifactId>
+      <version>1.8.2</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>nertc-base</artifactId>
+          <groupId>com.netease.yunxin</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.netease.yunxin</groupId>
+      <artifactId>nertc</artifactId>
+      <version>4.6.43</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -166,6 +166,24 @@
       <groupId>com.google.android.material</groupId>
       <artifactId>material</artifactId>
       <version>1.5.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.constraintlayout</groupId>
+      <artifactId>constraintlayout</artifactId>
+      <version>2.1.3</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-fragment</artifactId>
+      <version>2.4.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-ui</artifactId>
+      <version>2.4.1</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
