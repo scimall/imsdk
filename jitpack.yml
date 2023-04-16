@@ -1,3 +1,3 @@
 install: 
-  - FILE="-Dfile=imsdk-1.0.7.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.scimall -DartifactId=imsdk -Dversion=1.0.7 -Dpackaging=aar -DpomFile=pom.xml
+  - FILE="-Dfile=imsdk-1.0.8.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.scimall -DartifactId=imsdk -Dversion=1.0.8 -Dpackaging=aar -DpomFile=pom.xml
