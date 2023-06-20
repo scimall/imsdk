@@ -50,6 +50,12 @@
             <version>9.4.1</version>
             <scope>compile</scope>
         </dependency>
+         <dependency>
+            <groupId>com.netease.yunxin.kit.team</groupId>
+            <artifactId>teamkit-ui</artifactId>
+            <version>9.4.1</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>com.netease.yunxin.kit.locationkit</groupId>
             <artifactId>locationkit</artifactId>
